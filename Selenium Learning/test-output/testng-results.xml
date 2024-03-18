@@ -1,17 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T06:57:46 GMT" name="Default suite" finished-at="2024-03-13T06:57:46 GMT" duration-ms="93">
+  <suite started-at="2024-03-18T09:44:10 GMT" name="Default suite" finished-at="2024-03-18T09:44:10 GMT" duration-ms="74">
     <groups>
     </groups>
-    <test started-at="2024-03-13T06:57:46 GMT" name="Default test" finished-at="2024-03-13T06:57:46 GMT" duration-ms="93">
-      <class name="TestNew.ExampletestNG">
-        <test-method signature="Testcase1()[pri:0, instance:TestNew.ExampletestNG@1de5f259]" started-at="2024-03-13T06:57:46 GMT" name="Testcase1" finished-at="2024-03-13T06:57:46 GMT" duration-ms="14" status="PASS">
+    <test started-at="2024-03-18T09:44:10 GMT" name="Default test" finished-at="2024-03-18T09:44:10 GMT" duration-ms="74">
+      <class name="TestCases.Checkboxtest">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:TestCases.Checkboxtest@3a6bb9bf]" started-at="2024-03-18T09:44:10 GMT" name="setup" finished-at="1970-01-01T00:00:00 GMT" duration-ms="-1710755050694" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'name' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-840791787\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'name' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-840791787\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase1 -->
-      </class> <!-- TestNew.ExampletestNG -->
+        </test-method> <!-- setup -->
+        <test-method signature="testcase1()[pri:0, instance:TestCases.Checkboxtest@3a6bb9bf]" started-at="2024-03-18T09:44:10 GMT" name="testcase1" finished-at="2024-03-18T09:44:10 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'name' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-840791787\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'name' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in C:\Users\Administrator\AppData\Local\Temp\2\testng-eclipse-840791787\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+        <test-method is-config="true" signature="screenshottest()[pri:0, instance:TestCases.Checkboxtest@3a6bb9bf]" started-at="2024-03-18T09:44:10 GMT" name="screenshottest" finished-at="1970-01-01T00:00:00 GMT" duration-ms="-1710755050749" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshottest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Checkboxtest@3a6bb9bf]" started-at="2024-03-18T09:44:10 GMT" name="tearDown" finished-at="1970-01-01T00:00:00 GMT" duration-ms="-1710755050755" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.Checkboxtest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-@ Run All
+@ Run 
 public class Checkboxtest {
 
 	private static final WebElement Chkbox = null;
@@ -24,8 +24,7 @@ public class Checkboxtest {
 		driver.manage().window().maximize();
 	}
 	@Test
-	Run | Debug
-	public void testcase1() {
+		public void testcase1() {
 		//System.out.println("Test");
 		driver.get("https://demo.seleniumeasy.come/basic-checkbox-demo.html");
 		String title =driver.getTitle();
@@ -33,7 +32,6 @@ public class Checkboxtest {
 		Assert.assertEquals(title, expectedTitle);
 	}
 	@ Test
-	Run | Debug
 	public void testcase2() {
 		WebElement Chkbox = driver.findElement(By.cssSelector("isAgeSelected"));
 		Chkbox.click();
@@ -42,7 +40,7 @@ public class Checkboxtest {
 	}
 	
 	@Test
-	Run|Debug
+
 	public void Testcase3() {
 		Chkbox.click();
 		System.out.println("After UnSelect: " + Chkbox.isSelected());
